@@ -6,5 +6,10 @@ pipeline {
                 sh "gradlew assemble"
             }
         }
+        stage('Test') {
+            steps {
+                sh "gradlew test"
+            }
+        }
     }
 }
